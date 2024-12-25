@@ -1,6 +1,6 @@
-import React from 'react'
-import { assets } from '../assets/assets'
-import { useClerk, UserButton, useUser } from '@clerk/clerk-react'
+import React from 'react';
+import { assets } from '../assets/assets';
+import { useClerk, UserButton, useUser } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -30,4 +30,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
