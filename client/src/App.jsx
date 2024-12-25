@@ -1,8 +1,8 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import ApplyJob from './pages/ApplyJob'
-import Application from './pages/Application'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import ApplyJob from './pages/ApplyJob';
+import Application from './pages/Application';
 
 
 const App = () => {
@@ -17,4 +17,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
