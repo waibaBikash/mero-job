@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ApplyJob = () => {
   return (
@@ -6,4 +6,4 @@ const ApplyJob = () => {
   )
 }
 
-export default ApplyJob
+export default ApplyJob;
