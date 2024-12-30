@@ -19,6 +19,17 @@ const Hero = () => {
               <button className='bg-blue-600 px-6 py-2 rounded text-white m-1'>Search</button>
           </div>
        </div>
+         <div className='border border-gray-300 shadow-md mt-5 p-6 rounded-md flex'>
+            <div className='flex justify-center gap-10 lg:gap-16 flex-wrap'>
+               <p className='font-medium'>Trusted by</p>
+               <img className='h-6' src={assets.microsoft_logo} alt="" />
+               <img className='h-6' src={assets.walmart_logo} alt="" />
+               <img className='h-6' src={assets.accenture_logo} alt="" />
+               <img className='h-6' src={assets.samsung_logo} alt="" />
+               <img className='h-6' src={assets.amazon_logo} alt="" />
+               <img className='h-6' src={assets.adobe_logo} alt="" />
+            </div>
+         </div>
     </div>
   )
 }
