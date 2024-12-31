@@ -25,7 +25,11 @@ const Hero = () => {
             className='text-2xl md:text-3xl lg:text-4xl font-medium mb-4'>
             Over 10,000+ jobs to apply
             </h2>
-         <p className='mb-8 max-w-xl mx-auto text-sm font-light px-5'>Your Next Big Career Move Starts Rights Here - Explore the Best job Oppertunites and Take Step Towards Your Future! </p>
+         <p 
+           className='mb-8 max-w-xl mx-auto text-sm font-light px-5'>
+            Your Next Big Career Move Starts Rights Here - Explore the Best
+             job Oppertunites and Take Step Towards Your Future!
+              </p>
           <div className='flex items-center justify-between bg-white rounded text-gray-600 max-w-xl pl-4 mx-4 sm:mx-auto'>
              <div className='flex items-center'>
                <img className='h-4 sm:h-5' src={assets.search_icon} alt="" />
