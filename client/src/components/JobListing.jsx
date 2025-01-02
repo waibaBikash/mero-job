@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContxt'
-import { assets, JobCategories, JobLocations } from '../assets/assets'
+import { assets, JobCategories, JobLocations, jobsData } from '../assets/assets'
+import JobCart from './JobCart'
 
 const JobListing = () => {
 
@@ -49,7 +50,7 @@ const JobListing = () => {
 
            {/* Location Filter */}
            <div className='max-lg:hidden'>
-             <h4 className='font-medium text-lg py-4'>Search by Locations </h4>
+             <h4 className='font-medium text-lg py-4 pt-14'>Search by Locations </h4>
               <ul className='space-y-4 text-gray-600'>
                  {
                   JobLocations.map((location,index)=>(
@@ -64,8 +65,16 @@ const JobListing = () => {
       </div>
 
       {/* Job listings */}
-       <section>
-         
+       <section className='w-full lg:w-3/4 text-gray-800 max-lg:px-4'>
+         <h3 className='font-medium text-3xl py-2 ' id='job-list'>Latest Jobs</h3>
+         <p className='mb-8'>Get your desired job form top companies</p>
+           <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4'>
+             {
+               jobsData.map((job,index)=>(
+                <JobCart key={index} job={job}/>
+               ))
+             }
+           </div>
        </section>
     </div>
   )
