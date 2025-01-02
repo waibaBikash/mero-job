@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContxt'
-import { assets, JobCategories, JobLocations, jobsData } from '../assets/assets'
+import { assets, JobCategories, JobLocations } from '../assets/assets'
 import JobCart from './JobCart'
 
 const JobListing = () => {
 
-  const {isSearched, searchFilter, setSearchFilter} = useContext(AppContext)
+  const {isSearched, searchFilter, setSearchFilter, jobs} = useContext(AppContext)
   return (
     <div className='container 2xl:px-20 mx-auto flex flex-col lg:flex-row max-lg:space-y-8 py-8'>
       {/* Sidebar */}
@@ -70,7 +70,7 @@ const JobListing = () => {
          <p className='mb-8'>Get your desired job form top companies</p>
            <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4'>
              {
-               jobsData.map((job,index)=>(
+               jobs.map((job,index)=>(
                 <JobCart key={index} job={job}/>
                ))
              }
