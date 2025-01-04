@@ -21,4 +21,4 @@ const JobCart = ({ job }) => {
   )
 }
 
-export default JobCart
+export default JobCart;
