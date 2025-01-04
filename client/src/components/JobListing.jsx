@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
-import { AppContext } from '../context/AppContxt'
-import { assets, JobCategories, JobLocations } from '../assets/assets'
-import JobCart from './JobCart'
+import React, { useContext } from 'react';
+import { AppContext } from '../context/AppContxt';
+import { assets, JobCategories, JobLocations } from '../assets/assets';
+import JobCart from './JobCart';
 
 const JobListing = () => {
 
@@ -80,4 +80,4 @@ const JobListing = () => {
   )
 }
 
-export default JobListing
+export default JobListing;
